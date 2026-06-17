@@ -75,25 +75,7 @@ export default function Navbar() {
 
           {/* Desktop Resume Button */}
 
-          <div className="hidden md:flex items-center gap-3">
-            <a
-              href="/resume.pdf"
-              target="_blank"
-              className="flex items-center gap-2 rounded-xl bg-white text-black px-4 py-2 text-sm font-medium hover:scale-105 transition"
-            >
-              Resume
-              <Download size={16} />
-            </a>
-          </div>
-
-          {/* Mobile Menu Button */}
-
-          <button
-            onClick={() => setOpen(!open)}
-            className="md:hidden text-white"
-          >
-            {open ? <X size={24} /> : <Menu size={24} />}
-          </button>
+         
         </div>
 
         {/* Mobile Menu */}

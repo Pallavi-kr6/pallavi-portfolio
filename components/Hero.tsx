@@ -7,7 +7,8 @@ import {
   Code2,
 } from "lucide-react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-
+import BorderGlow from './BorderGlow';
+import PixelCard from './PixelCard';
 export default function Hero() {
   return (
     <section className="min-h-screen flex items-center justify-center px-6 pt-24">
@@ -113,27 +114,78 @@ export default function Hero() {
           transition={{ delay: 0.45 }}
           className="grid grid-cols-2 md:grid-cols-4 gap-5 mt-20"
         >
-          <div className="rounded-2xl border border-zinc-800 bg-zinc-950 p-6">
+            <BorderGlow
+  edgeSensitivity={30}
+  glowColor="40 80 80"
+  backgroundColor="#120F17"
+  borderRadius={28}
+  glowRadius={40}
+  glowIntensity={1}
+  coneSpread={25}
+  animated={false}
+  colors={['#c084fc', '#f472b6', '#38bdf8']}
+> 
+          <div className="rounded-2xl border border-zinc-800 bg-zinc-950 p-6"   style={{ padding: '2em' }}>
             <h3 className="text-3xl font-bold text-white">9.59</h3>
             <p className="text-zinc-500 mt-2">CGPA</p>
           </div>
+</BorderGlow>
 
-          <div className="rounded-2xl border border-zinc-800 bg-zinc-950 p-6">
+   <BorderGlow
+  edgeSensitivity={30}
+  glowColor="40 80 80"
+  backgroundColor="#120F17"
+  borderRadius={28}
+  glowRadius={40}
+  glowIntensity={1}
+  coneSpread={25}
+  animated={false}
+  colors={['#c084fc', '#f472b6', '#38bdf8']}
+> 
+          <div className="rounded-2xl border border-zinc-800 bg-zinc-950 p-6"   style={{ padding: '2em' }}> 
             <h3 className="text-3xl font-bold text-white">10+</h3>
             <p className="text-zinc-500 mt-2">Projects</p>
           </div>
+</BorderGlow>
 
-          <div className="rounded-2xl border border-zinc-800 bg-zinc-950 p-6">
+
+          <BorderGlow
+  edgeSensitivity={30}
+  glowColor="40 80 80"
+  backgroundColor="#120F17"
+  borderRadius={28}
+  glowRadius={40}
+  glowIntensity={1}
+  coneSpread={25}
+  animated={false}
+  colors={['#c084fc', '#f472b6', '#38bdf8']}
+> 
+          <div className="rounded-2xl border border-zinc-800 bg-zinc-950 p-6"   style={{ padding: '2em' }}> 
+        
             <h3 className="text-3xl font-bold text-white">2+</h3>
             <p className="text-zinc-500 mt-2">Hackathons</p>
           </div>
+</BorderGlow>
 
-          <div className="rounded-2xl border border-zinc-800 bg-zinc-950 p-6">
+
+              <BorderGlow
+  edgeSensitivity={30}
+  glowColor="40 80 80"
+  backgroundColor="#120F17"
+  borderRadius={28}
+  glowRadius={40}
+  glowIntensity={1}
+  coneSpread={25}
+  animated={false}
+  colors={['#c084fc', '#f472b6', '#38bdf8']}
+> 
+          <div className="rounded-2xl border border-zinc-800 bg-zinc-950 p-6"   style={{ padding: '2em' }}> 
             <h3 className="text-3xl font-bold text-white">1</h3>
             <p className="text-zinc-500 mt-2">Research Internship</p>
           </div>
+          </BorderGlow>
         </motion.div>
-
+ 
         {/* Featured Highlight */}
 
         <motion.div

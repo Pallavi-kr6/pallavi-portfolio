@@ -1,3 +1,6 @@
+"use client";
+
+import TargetCursor from "@/components/TargetCursor";
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
@@ -10,6 +13,12 @@ import Contact from "@/components/Contact";
 export default function Home() {
   return (
     <main className="grid-bg min-h-screen">
+      <TargetCursor 
+        spinDuration={2}
+        hideDefaultCursor
+        parallaxOn
+        hoverDuration={0.2}
+      />
       <Navbar />
       <Hero />
       <About />

@@ -5,6 +5,7 @@ import {
   Mail,
   ArrowUpRight,
   Code2,
+  FileText,
 } from "lucide-react";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
 
@@ -33,6 +34,12 @@ export default function Contact() {
       value: "leetcode.com/u/pallavi_kr6",
       href: "https://leetcode.com/u/pallavi_kr6/",
       icon: Code2,
+    },
+    {
+      name: "Resume",
+      value: "View my resume",
+      href: "https://drive.google.com/file/d/18rgZanlCqsoQWsfA0COIRkkjV6PZFhT6/view?usp=sharing",
+      icon: FileText,
     },
   ];
 
